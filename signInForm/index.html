@@ -3,15 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $('.link').click(function(){
+                $('.panel').toggleClass('flip');
+           
+            });
+        });
+    </script>
 	<title>Sass Demo | sign In Form</title>
 </head>
 <body>
+<div class="panel">
+<div class="front">
 <form action="">
 		<h2>sign in</h2>
 		<input type="text" placeholder="username">
 		<input type="password" placeholder="password">
 		<button type="button">login</button>
-	</form>	
-
+		<span>Don't have an account? <a href="#" class="link">signup now </a></span>
+</form>	
+</div>
+<div class="back">
+<form action="">
+		<h2>sign up</h2>
+		<input type="text" placeholder="username">
+		<input type="password" placeholder="password">
+		<input type="password" placeholder="confirm password">
+		<button type="button">sign up</button>
+		<span>Already have an account? <a href="#" class="link">signin now </a></span>
+</form>	
+</div>
+</div>
 </body>
 </html>
