@@ -161,11 +161,11 @@ span{
          z-index: 800;
             width: inherit;
             height: inherit;
-            -webkit-transform: rotateY(-180deg);
+            @include rotateY(-180deg);
+           
             -webkit-transform-style: preserve-3d;
             -webkit-backface-visibility: hidden;
  
-            -moz-transform: rotateY(-180deg);
             -moz-transform-style: preserve-3d;
             -moz-backface-visibility: hidden;
             /* -- transition is the magic sauce for animation -- */
@@ -177,6 +177,7 @@ span{
         }
         .panel.flip .back {
             z-index: 1000;
-            -webkit-transform: rotateX(0deg) rotateY(0deg);
-            -moz-transform: rotateX(0deg) rotateY(0deg);
+             @include rotateX(0deg);
+             @include rotateY(0deg);
+            
         }

@@ -164,9 +164,12 @@ span {
   width: inherit;
   height: inherit;
   -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
-  -moz-transform: rotateY(-180deg);
   -moz-transform-style: preserve-3d;
   -moz-backface-visibility: hidden;
   /* -- transition is the magic sauce for animation -- */
@@ -178,5 +181,13 @@ span {
 
 .panel.flip .back {
   z-index: 1000;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg); }
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg); }

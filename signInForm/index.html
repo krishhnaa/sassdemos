@@ -8,7 +8,9 @@
         $(document).ready(function(){
            
             $('.link').click(function(){
+            	$('.back').show();
                 $('.panel').toggleClass('flip');
+
            
             });
         });
@@ -26,7 +28,7 @@
 		<span>Don't have an account? <a href="#" class="link">signup now </a></span>
 </form>	
 </div>
-<div class="back">
+<div class="back" style="display:none">
 <form action="">
 		<h2>sign up</h2>
 		<input type="text" placeholder="username">
